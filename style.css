@@ -51,7 +51,7 @@
 @media (max-width: 870px) {
   .page-shape .card,
   .top {
-    padding: 1rem;
+    padding: 0.5rem;
     top: 60%;
     display: flex;
     flex-wrap: wrap;
@@ -61,16 +61,21 @@
     gap: 10px;
   }
   .page-shape .card {
-    top: 40%;
+    top: 50%;
   }
   .card form input {
     width: 70%;
+    height: 1rem;
   }
   .card form .f select {
     width: 80%;
+    height: 2.5rem;
   }
   .card form .f {
     min-width: 100%;
+  }
+  .card label {
+    font-size: 0.9rem;
   }
   form button {
     position: relative;
@@ -84,6 +89,7 @@
   .page-shape h1 {
     font-size: 2.7rem;
     top: 4%;
+    position: fixed;
   }
   .page-shape h1 span {
     font-size: 3rem;
@@ -92,9 +98,13 @@
     width: 70%;
     display: none;
     font-family: sans-serif;
-    padding: 1%;
-    top: 75%;
-    height: 150px;
+    position: fixed;
+    margin-top: 2%;
+    height: 100px;
+    font-size: 1rem;
+  }
+  .page-shape .res #close-res {
+    display: none;
   }
 }
 .card form {
@@ -205,7 +215,7 @@ p {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  position: fixed;
   left: 57.7%;
   top: 85%;
   transform: translate(-60%, -50%);

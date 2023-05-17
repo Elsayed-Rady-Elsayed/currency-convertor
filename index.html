@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-shape">
+      <h1><span>Currency</span> Converter</h1>
+      <p>convert between Currency with alot of them without any charges</p>
+      <div class="card" id="card">
+        <form action="">
+          <div class="top">
+            <div class="f 1">
+              <label for="">Amount</label>
+              <input id="amount" type="text" value="1" />
+            </div>
+            <div class="f 2" id="from">
+              <label for="">From</label>
+              <select name="From" id=""></select>
+            </div>
+            <div class="f 3" id="to">
+              <label for="">To</label>
+              <select name="From" id=""></select>
+            </div>
+          </div>
+          <button id="convert">convert</button>
+        </form>
+      </div>
+      <div class="res" id="res">
+        <span id="close-res">X</span>
+        <h2>
+          <span id="amount"></span> <span id="from"></span> = <br />
+          <span id="rate"></span> <span id="to"></span>
+        </h2>
+      </div>
+    </div>
+    <script src="enc.js"></script>
+  </body>
+</html>
